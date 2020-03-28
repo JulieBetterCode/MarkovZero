@@ -6,7 +6,7 @@ import edu.duke.*;
  * @version 1.0
  */
 public class MarkovRunner {
-    public void MarkovZero() {
+    /*public void MarkovZero() {
 		FileResource fr = new FileResource();
 		MarkovRunner marko = new MarkovRunner();
 		String st = fr.asString();
@@ -62,6 +62,38 @@ public class MarkovRunner {
 			String text = markov.getRandomText(500);
 			marko.printOut(text);
 		}
+	}*/
+
+	public void runModel(IMarkovModel markov, String text, int size){
+		markov.setTraining(text);
+		System.out.println("running with " + markov);
+		for(int k=0; k < 3; k++){
+			String st = markov.getRandomText(size);
+			printOut(st);
+		}
+	}
+
+	public void runModel(IMarkovModel markov, String text, int size, int seed){
+		markov.setTraining(text);
+		markov.setRandom(seed);
+		System.out.println("running with " + markov);
+		for(int k=0; k < 3; k++){
+			String st = markov.getRandomText(size);
+			printOut(st);
+		}
+	}
+
+	public static void main(String[] args) {
+		FileResource fr = new FileResource();
+		MarkovRunner marko = new MarkovRunner();
+		String st = fr.asString();
+		st = st.replace('\n', ' ');
+		MarkovWordOne markovWord = new MarkovWordOne();
+		MarkovWordTwo markovWord2 = new MarkovWordTwo();
+		int size = 120;
+		int seed = 832;
+		//marko.runModel(markovWord, st, size, seed);
+		marko.runModel(markovWord2, st, size, seed);
 	}
 
 	private void printOut(String s){
