@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50fdaec2-41de-456c-8755-c36b0be954eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AbstractMarkovModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EfficientMarkovModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IMarkovModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MarkovRunnerWithInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MarkovZero/MarkovFour.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MarkovZero/MarkovFour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MarkovZero/MarkovModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MarkovZero/MarkovModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MarkovZero/MarkovOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MarkovZero/MarkovOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MarkovZero/MarkovRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MarkovZero/MarkovRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MarkovZero/MarkovZero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MarkovZero/MarkovZero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MarkovZero/Tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MarkovZero/Tester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MarkovFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MarkovFour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MarkovModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MarkovModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MarkovOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MarkovOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MarkovRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MarkovRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MarkovZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MarkovZero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +41,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1ZihWnrH9hvAVcP851YfQY93EFo" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -44,6 +58,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lingxia\IdeaProjects\MarkovZero\src" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -53,7 +70,7 @@
   </component>
   <component name="RunManager">
     <configuration name="MarkoZero" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="MarkovRunner" />
+      <option name="MAIN_CLASS_NAME" value="MarkovRunnerWithInterface" />
       <module name="MarkovZero" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -71,60 +88,84 @@
       <option name="presentableId" value="Default" />
       <updated>1585327855435</updated>
     </task>
+    <task id="LOCAL-00001" summary="Assignment 1 &amp; 2">
+      <created>1585417589454</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585417589454</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Assignment 1 &amp; 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment 1 &amp; 2" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="188" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585343678702">
+    <state x="188" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585418342754">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="188" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1585343678702" />
+    <state x="188" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1585418342754" />
     <state x="371" y="124" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1585338508584">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="124" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1585338508584" />
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1585417587505">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1585417587505" />
     <state x="421" y="82" key="FileChooserDialogImpl" timestamp="1585330695635">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585330695635" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1585417158253">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1585420894634">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585417158253" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1585417158253">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585420894634" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1585420894634">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585417158253" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1585417158253">
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585420894634" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1585420894633">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585417158253" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1585417158253">
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585420894633" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1585420894634">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585417158253" />
-    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1585342334746">
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585420894634" />
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1585419486459">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585342334746" />
-    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1585342334746">
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585419486459" />
+    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1585419486459">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1585342334746" />
-    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1585342334746">
+    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1585419486459" />
+    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1585419486459">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1585342334746" />
-    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1585342334746">
+    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1585419486459" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1585419486459">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1585342334746" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1585419486459" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1585328709298">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585328709298" />
-    <state x="336" y="72" width="609" height="536" key="find.popup" timestamp="1585341615534">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1585417711196">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="336" y="72" width="609" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1585341615534" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1585417711196" />
+    <state x="336" y="72" width="609" height="536" key="find.popup" timestamp="1585418529304">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="336" y="72" width="609" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1585418529304" />
+    <state x="297" y="151" key="run.anything.popup" timestamp="1585419480139">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1585419480139" />
   </component>
 </project>

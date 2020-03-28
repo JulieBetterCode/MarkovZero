@@ -50,14 +50,13 @@ public class MarkovRunner {
 		}
 	}
 
-	public static void main(String[] args) {
+	public void runMarkovModel() {
 		MarkovRunner marko = new MarkovRunner();
 		FileResource fr = new FileResource();
 		String st = fr.asString();
 		st = st.replace('\n', ' ');
-		MarkovModel markov = new MarkovModel();
+		MarkovModel markov = new MarkovModel(8);
 		markov.setRandom(365);
-		markov.setModel(8);
 		markov.setTraining(st);
 		for(int k=0; k < 3; k++){
 			String text = markov.getRandomText(500);

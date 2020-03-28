@@ -9,9 +9,7 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-public class MarkovOne {
-    private String myText;
-	private Random myRandom;
+public class MarkovOne extends AbstractMarkovModel{
 
 	public MarkovOne() {
 		myRandom = new Random();
@@ -46,18 +44,7 @@ public class MarkovOne {
 		return sb.toString();
 	}
 
-	public ArrayList<String> getFollows(String key) {
-		ArrayList<String> follows = new ArrayList<String>();
-		int keyLength = key.length();
-		int i = 0;
-		while(i < myText.length()) {
-			int index = myText.indexOf(key, i);
-			if(index == -1) break;
-			if(index + keyLength >= myText.length()) break;
-			String follow = myText.substring(index+keyLength, index+keyLength+1);
-			follows.add(follow);
-			i = index + keyLength;
-		}
-		return follows;
+	public String toString() {
+		return "MarkovModel of order 1";
 	}
 }

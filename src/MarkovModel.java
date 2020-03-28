@@ -1,16 +1,15 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-public class MarkovModel {
-    private String myText;
-    private Random myRandom;
+public class MarkovModel extends AbstractMarkovModel{
     private int myModel;
 
-    public MarkovModel() {
+    public MarkovModel(int n) {
         myRandom = new Random();
+        myModel = n;
     }
 
-    public void setModel(int n) { myModel = n; }
+    //public void setModel(int n) { myModel = n; }
 
     public void setRandom(int seed){
         myRandom = new Random(seed);
@@ -38,18 +37,7 @@ public class MarkovModel {
         return sb.toString();
     }
 
-    public ArrayList<String> getFollows(String key) {
-        ArrayList<String> follows = new ArrayList<String>();
-        int keyLength = key.length();
-        int i = 0;
-        while(i < myText.length()) {
-            int index = myText.indexOf(key, i);
-            if(index == -1) break;
-            if(index + keyLength >= myText.length()) break;
-            String follow = myText.substring(index+keyLength, index+keyLength+1);
-            follows.add(follow);
-            i = index + keyLength;
-        }
-        return follows;
+    public String toString() {
+        return "MarkovModel of order " + myModel;
     }
 }
