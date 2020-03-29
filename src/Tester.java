@@ -18,7 +18,7 @@ public class Tester {
         st = st.replace('\n', ' ');
 
         markov.setTraining(st);
-        ArrayList<String> follows = markov.getFollows("th");
+        ArrayList<String> follows = markov.getFollows("he");
         System.out.println(follows);
         System.out.println("follows length: " + follows.size());
     }

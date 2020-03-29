@@ -21,13 +21,16 @@ public class MarkovRunnerWithInterface {
     
     public static void main(String[] args) {
     	MarkovRunnerWithInterface markov = new MarkovRunnerWithInterface();
-        /*FileResource fr = new FileResource();
+        FileResource fr = new FileResource();
 		String st = fr.asString();
 		st = st.replace('\n', ' ');
 		int size = 200;
-		int seed = 88;
+		int seed = 531;
+
+		EfficientMarkovModel model = new EfficientMarkovModel(5);
+		markov.runModel(model, st, size, seed);
 		
-        MarkovZero mz = new MarkovZero();
+        /*MarkovZero mz = new MarkovZero();
 		markov.runModel(mz, st, size, seed);
     
         MarkovOne mOne = new MarkovOne();
@@ -39,7 +42,7 @@ public class MarkovRunnerWithInterface {
         MarkovFour mFour = new MarkovFour();
 		markov.runModel(mFour, st, size, seed);
 */
-		markov.testHashMap();
+		//markov.testHashMap();
     }
 
 	private void printOut(String s){
